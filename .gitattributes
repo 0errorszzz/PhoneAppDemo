@@ -1,0 +1,4 @@
+# Default for all text files to use LF
+* text=auto eol=lf
+# Windows batch processing can preserve CRLF
+*.bat eol=crlf
