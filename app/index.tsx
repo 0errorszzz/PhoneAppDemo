@@ -13,9 +13,9 @@ import {
 } from "react-native"
 import { router } from "expo-router"
 import { useMutation } from "@tanstack/react-query"
-import CountryPicker from "../../components/CountryPicker"
-import { sendVerificationCode } from "../../src/services/authService"
-import { validateByCountry, formatByCountry } from "../../src/utils/phoneValidation"
+import CountryPicker from "../components/CountryPicker"
+import { sendVerificationCode } from "../src/services/authService"
+import { validateByCountry, formatByCountry } from "../src/utils/phoneValidation"
 
 const { height: screenHeight } = Dimensions.get("window")
 

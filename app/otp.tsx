@@ -33,7 +33,7 @@ export default function OTPScreen() {
   const verifyMutation = useMutation({
     mutationFn: verifyCode,
     onSuccess: () => {
-      Alert.alert('Success', 'Authenticated！', [{ text: 'Yes', onPress: () => router.push('/(tabs)') }]);
+      Alert.alert('Success', 'Authenticated！', [{ text: 'Yes', onPress: () => router.push('/home') }]);
     },
     onError: (error: any) => {
       Alert.alert('Error', error?.message || 'Authentication failed');
